@@ -5,15 +5,15 @@ Feature: Student Credentials Validation
 Background:
     
     Given the user is a valid student 
-    and is not banned
-    and is on the application.
+    And is not banned
+    And is on the application
 
 
-Scenario: user wants to claim free item and checks out.
-    Given user finds the item on the app.
+Scenario: user wants to claim free item and checks out
+    Given user finds the item on the app
     When the user clicks the item
-    Then they are routed to the items location information 
-    and the Item is removed from the list
+    Then they are routed to the checkout summary
+    And the Item is removed from the list
 
 Scenario: user claims no items and checks out 
     Given the user has no claimed items
