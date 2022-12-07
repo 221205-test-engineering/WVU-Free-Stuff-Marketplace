@@ -1,6 +1,6 @@
 Feature: Searching up an item
 
-Background: User is logged in 
+Background: Given user is logged in 
 
 Scenario: User searches up an item that exists in the inventory
     Given the user enters a description/tag in the search box
