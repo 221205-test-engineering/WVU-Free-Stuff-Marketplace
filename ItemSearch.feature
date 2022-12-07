@@ -1,6 +1,9 @@
 Feature: Searching up an item
 
-Background: Given user is logged in 
+Background: 
+    Given user is logged in 
+    And user is not banned
+
 
 Scenario: User searches up an item that exists in the inventory
     Given the user enters a description/tag in the search box
